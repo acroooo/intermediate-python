@@ -8,5 +8,7 @@ index:
 - list and dicts anidados
 - list comprehension
 - dict comprehension
-
-"""
+- filtering DATA
+- debugging
+- handling errors with try, except, raise, finally
+  """
