@@ -11,4 +11,6 @@ index:
 - filtering DATA
 - debugging
 - handling errors with try, except, raise, finally
+- assert statements
+- handling txt files
   """
