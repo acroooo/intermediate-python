@@ -19,6 +19,8 @@ def run():
             print("Los divisores de {} son: {}".format(num, result))
     except ValueError as ve:
         print("Se debe ingresar un número")
+    finally:
+        print("----------- Fin del programa -----------")
 
 
 if __name__ == '__main__':
