@@ -1,19 +1,14 @@
 def divisors(num):
     divisors = []
-    try:
-        if num < 0:
-            raise ValueError("Ingresa un número positivo")
-        for i in range(1, num + 1):
-            if num % i == 0:
-                divisors.append(i)
-        return divisors
-    except ValueError as err:
-        print(err)
+    for i in range(1, num + 1):
+        if num % i == 0:
+            divisors.append(i)
+    return divisors
 
 
 def run():
     num = input("Ingresa un número: ")
-    assert num.isnumeric(), "Debes ingresar un número"
+    assert num.isnumeric(), "Debes ingresar un número que además se encuentre dentro de los números enteros positivos"
     result = divisors(int(num))
     if result is not None:
         print("Los divisores de {} son: {}".format(num, result))
